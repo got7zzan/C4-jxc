@@ -53,8 +53,8 @@ public class Task7 {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        int a,b;//第二个复数的实部和虚部
-        int c,d;//第一个复数的实部和虚部
+        int a,b;//第一个复数的实部和虚部
+        int c,d;//第二个复数的实部和虚部
         System.out.println("请输入第一个复数的实部和虚部：");
         a=in.nextInt();
         b=in.nextInt();
