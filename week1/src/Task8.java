@@ -1,51 +1,55 @@
-import java.util.ArrayList;
-import java.util.Arrays;
+
 
 public class Task8 {
-    ArrayList<String> notes = new ArrayList<String>();
-
-    public void add(String s)
-    {
-        notes.add(s);
-    }
-    public void add(int location,String s)
-    {
-        notes.add(location,s);
-    }
-    public int getSize()
-    {
-        return notes.size();
-    }
-    public String getNote(int index)
-    {
-        return notes.get(index);
-    }
-    public String removeNote(int index)
-    {
-        return notes.remove(index);
-    }
-    public String[] list()
-    {
-        String[] a = new String[notes.size()];
-       // for (int i=0;i<notes.size();i++)
-        //{
-          //  a[i]=notes.get(i);
-        //}
-        notes.toArray(a);
-        return a;
-    }
-
     public static void main(String[] args) {
-        Task8 nb = new Task8();
-        nb.add("first");
-        nb.add("seconde");
-        nb.add(1,"third");
-        //System.out.println(nb.getNote(1));
-        nb.removeNote(2);
-        String[] a = nb.list();
-        for(int i=0;i<a.length;i++)
-        {
-            System.out.print(a[i]+" ");
-        }
+        Rabbit rabbit = new Rabbit();
+        Tiger tiger = new Tiger();
+
+        rabbit.eat();
+        rabbit.sleep();
+
+        tiger.eat();
+        tiger.sleep();
+    }
+}
+
+class Animal{
+    double height;
+    double weight;
+
+    public void eat()
+    {
+        System.out.println("eat...");
+    }
+
+    public void sleep()
+    {
+        System.out.println("sleep");
+    }
+}
+
+class Rabbit extends Animal{
+   // @Override
+    public void eat()
+    {
+        System.out.println("rabbit eat grass.");
+    }
+   // @Override
+    public void sleep()
+    {
+        super.sleep();
+    }
+}
+
+class Tiger extends Animal{
+    //@Override
+    public void eat()
+    {
+        System.out.println("tiger eat meat.");
+    }
+    //@Override
+    public void sleep()
+    {
+        super.sleep();
     }
 }
