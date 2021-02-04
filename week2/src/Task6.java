@@ -21,14 +21,6 @@ class Vehicle{
         this.wheels=wheels;
         this.weight=weight;
     }
-    public int getWheels(int wheels)
-    {
-        return wheels;
-    }
-    public float getWeight(float weight)
-    {
-        return weight;
-    }
 
 }
 class Car extends Vehicle{
@@ -37,10 +29,6 @@ class Car extends Vehicle{
     {
         super(wheels,weight);
         this.loader= loader;
-    }
-    public int getLoader(int loader)
-    {
-        return loader;
     }
 }
 
@@ -52,14 +40,6 @@ class Truck extends Vehicle{
         super(wheels,weight);
         this.loader=loader;
         this.payload=payload;
-    }
-    public int getLoader(int loader)
-    {
-        return loader;
-    }
-    public float getPayload(float payload)
-    {
-        return payload;
     }
 }
 
