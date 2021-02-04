@@ -5,11 +5,12 @@ public class Task6 {
         Truck truck = new Truck(6,15000,2,3000);
         Test test = new Test(vehicle,car,truck);
         test.judge(vehicle,car,truck);
-        System.out.println("---------------------------");
+
+        Vehicle vehicle1 = new Vehicle(6,2150);
         Car car1 = new Car(4,1150,7);
         Truck truck1 = new Truck(6,15000,1,7000);
-        Test test1 = new Test(vehicle,car1,truck1);
-        test1.judge(vehicle,car1,truck1);
+        Test test1 = new Test(vehicle1,car1,truck1);
+        test1.judge(vehicle1,car1,truck1);
     }
 }
 
@@ -55,9 +56,20 @@ class Test{
     }
     public void judge(Vehicle vehicle,Car car,Truck truck)
     {
+        System.out.println("*********类Vehicle**********");
+        if(vehicle.wheels==4)
+        {
+            System.out.println("这是一辆小车，车轮的个数是："+vehicle.wheels+"    "+"车重"+vehicle.weight+"kg");
+        }
+        else if(vehicle.wheels==6)
+        {
+            System.out.println("这是一辆卡车，车轮的个数是："+vehicle.wheels+"    "+"车重"+vehicle.weight+"kg");
+        }
+        System.out.println();
+        System.out.println("*********类Car**********");
         if(car.wheels==4)
         {
-            System.out.println("车轮的个数是："+car.wheels+"    "+"车重"+car.weight);
+            System.out.println("车轮的个数是："+car.wheels+"    "+"车重"+car.weight+"kg");
             if(car.loader>0 && car.loader<=5)
             {
                 System.out.println("这是一辆小车，能载6人，实载"+car.loader+"人。");
@@ -67,10 +79,11 @@ class Test{
                 System.out.println("这是一辆小车，能载6人，实载"+car.loader+"人,你超员了！！！");
             }
         }
-        System.out.println("---------------------------");
+        System.out.println();
+        System.out.println("*********类Truck**********");
         if(truck.wheels==6)
         {
-            System.out.println("车轮的个数是："+truck.wheels+"    "+"车重"+truck.weight);
+            System.out.println("车轮的个数是："+truck.wheels+"    "+"车重"+truck.weight+"kg");
             if(truck.loader>0 && truck.loader<=3)
             {
                 System.out.println("这是一辆卡车，能载3人，实载"+truck.loader+"人。");
