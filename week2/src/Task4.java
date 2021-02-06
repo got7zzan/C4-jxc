@@ -1,3 +1,10 @@
+/*
+猜数字游戏：
+         一个类 Game 有一个成员变量 v，v 有一个初值 100。
+         定义一个方法 guess，对 Game 类的成员变量 v，用你输入的数字进行猜。
+         如果大了则提示大了，小了则提示小了。直到猜对才停止
+
+ */
 import java.util.Scanner;
 
 public class Task4 {
