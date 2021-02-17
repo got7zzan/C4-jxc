@@ -1,3 +1,7 @@
+/*
+wordCount（用 hashMap 实现）
+输入一串由英文字符串，现在需要统计出每个英文字母出现的次数
+ */
 import java.util.HashMap;
 import java.util.Scanner;
 
