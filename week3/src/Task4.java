@@ -32,6 +32,7 @@ public class Task4 {
         }
         //最后输出结果
         System.out.println("结果为：");
+        //Map.keySet() 方法将获取 Map 集合的所有键，并存放在一个 Set 集合对象中
         for (Character key : map.keySet())
         {
             Integer value = map.get(key);
