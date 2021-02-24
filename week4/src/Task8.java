@@ -26,6 +26,7 @@ public class Task8 {
             input.close();
             //将读取出来的字节数组数据变为字符串
             String parent = new String(data,0,len);
+            //将要查找的2021定义为子字符串
             String child = "2021";
             int count = StringMatch(parent,child);
             System.out.println("2021的个数为"+count);
