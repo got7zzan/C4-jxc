@@ -3,3 +3,5 @@ CREATE TABLE CouresAa(
                          Aa2 INTEGER,
                          Aa3 DECIMAL(10)
 );
+SHOW TABLES;
+DESC CouresAa;
