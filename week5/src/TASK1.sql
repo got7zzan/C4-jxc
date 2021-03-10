@@ -6,3 +6,5 @@ CREATE TABLE cqupt_student(
                               address VARCHAR(50),
                               memo VARCHAR(300)
 );
+SHOW TABLES;
+DESC cqupt_student;
