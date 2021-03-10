@@ -3,5 +3,3 @@ CREATE TABLE ChooseBb(
                          Bb2 INTEGER,
                          Bb3 DECIMAL(6)
 );
-SHOW TABLES;
-DESC CouresAa;
