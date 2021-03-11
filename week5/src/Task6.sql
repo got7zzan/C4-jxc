@@ -1,0 +1,1 @@
+CREATE VIEW View_Choosebb (View_bb1,View_bb2,View_bb3) AS SELECT Bb1,Bb2,Bb3 FROM choosebb;
