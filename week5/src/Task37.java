@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Scanner;
 
 /*
-3.求子集
+求子集
 给你一个整数数组 nums ，数组中的元素 互不相同 。返回该数组所有可能的子集
  */
 public class Task37 {
