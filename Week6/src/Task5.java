@@ -1,4 +1,4 @@
-//5把sno为s001的记录修改为('s001','老大',20,'通信学院')
+//5.把sno为s001的记录修改为('s001','老大',20,'通信学院')
 import java.sql.*;
 public class Task5{
     public static void main(String[] args) {

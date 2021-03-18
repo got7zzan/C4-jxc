@@ -1,4 +1,4 @@
-//2.查看表中的所有信息，遍历输出到控制台
+//2查看表中的所有信息，遍历输出到控制台
 import java.sql.*;
 
 public class Task2 {
