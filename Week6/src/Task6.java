@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-//6给你一个m行n列的矩阵 matrix,请按照顺时针螺旋顺序,返回矩阵中的所有元素。
+//给你一个m行n列的矩阵 matrix,请按照顺时针螺旋顺序,返回矩阵中的所有元素。
 public class Task6 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);

@@ -1,4 +1,4 @@
-//4.查询sno为s003的记录
+//4查询sno为s003的记录
 import java.sql.*;
 public class Task4 {
     public static void main(String[] args) {
