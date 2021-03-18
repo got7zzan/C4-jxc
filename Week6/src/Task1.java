@@ -4,7 +4,7 @@
 ('s002','老二',19,'计算机学院')
 ('s003','老三',18,'计算机学院')
 ('s004','老四',17,'计算机学院')
- */
+*/
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;

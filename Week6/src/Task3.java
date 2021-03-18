@@ -1,4 +1,3 @@
-
 //3.把sno为s004的记录删除
 import java.sql.*;
 
