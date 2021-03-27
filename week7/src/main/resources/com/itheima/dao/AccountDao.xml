@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itheima.dao.AccountDao">
+    <!-- 配置查询所有 -->
+    <select id="findAll" resultType="com.itheima.domain.Account">
+        select * from account;
+    </select>
+
+    <!--保存用户-->
+    <insert id="insertAccount" parameterType="com.itheima.domain.Account">
+        insert into account(id,name,money,createtime,updatetime) values (#{id},#{name},#{money},#{createtime},#{updatetime});
+    </insert>
+
+    <!--更新用户-->
+    <update id="updateAccount" parameterType="com.itheima.domain.Account">
+        update account set id=#{id},name=#{name},money=#{money},createtime=#{createtime},updatetime=#{updatetime} where id=#{id};
+    </update>
+
+    <!--删除用户-->
+    <delete id="deleteAccount" parameterType="java.lang.String">
+        delete from account where id=#{id};
+    </delete>
+
+    <!--根据id查询用户-->
+    <select id="findById" parameterType="java.lang.String" resultType="com.itheima.domain.Account">
+        select * from account where id=#{id};
+    </select>
+
+    <!--根据名称模糊查询-->
+    <select id="findByName" parameterType="String" resultType="com.itheima.domain.Account">
+        select * from account where name like #{name};
+    </select>
+
+</mapper>
